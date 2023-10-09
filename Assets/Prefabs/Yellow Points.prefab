@@ -48,7 +48,7 @@ Animator:
   m_Controller: {fileID: 9100000, guid: d899549906742174cbd14e0866a0bcf7, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
-  m_ApplyRootMotion: 0
+  m_ApplyRootMotion: 1
   m_LinearVelocityBlending: 0
   m_StabilizeFeet: 0
   m_WarningMessage: 
@@ -90,6 +90,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   value: 50
+  pickupEffect: {fileID: 2520519403754265217, guid: 2990aabe9eeacae41bdf6e678cbc2ffd, type: 3}
 --- !u!1 &2379350468425611729
 GameObject:
   m_ObjectHideFlags: 0
@@ -102,7 +103,7 @@ GameObject:
   - component: {fileID: 2153052248489700558}
   - component: {fileID: 4180988438453245956}
   m_Layer: 0
-  m_Name: Gold-02
+  m_Name: Gold
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

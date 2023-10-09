@@ -5,6 +5,9 @@ using UnityEngine;
 public class PointsPickup : MonoBehaviour
 {
     public int value;
+
+    public GameObject pickupEffect;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -22,6 +25,8 @@ public class PointsPickup : MonoBehaviour
         if (other.tag == "Player")
         {
             FindObjectOfType<GameManager>().AddScore(value);
+
+            Instantiate(pickupEffect, transform.position, transform.rotation);
 
             Destroy(gameObject);
         }
