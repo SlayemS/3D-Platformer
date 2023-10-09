@@ -1,9 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
+
+    public int currentScore;
+    public Text scoreText;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -14,5 +19,10 @@ public class GameManager : MonoBehaviour
     void Update()
     {
         
+    }
+
+    public void AddScore(int scoreToAdd) {
+        currentScore += scoreToAdd;
+        scoreText.text = "Score: " + currentScore;
     }
 }

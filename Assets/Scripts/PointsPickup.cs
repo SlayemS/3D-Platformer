@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class PointsPickup : MonoBehaviour
 {
+    public int value;
     // Start is called before the first frame update
     void Start()
     {
@@ -14,5 +15,15 @@ public class PointsPickup : MonoBehaviour
     void Update()
     {
         
+    }
+
+    private void OnTriggerEnter(Collider other) 
+    {
+        if (other.tag == "Player")
+        {
+            FindObjectOfType<GameManager>().AddScore(value);
+
+            Destroy(gameObject);
+        }
     }
 }
