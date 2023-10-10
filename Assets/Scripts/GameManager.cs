@@ -29,6 +29,8 @@ public class GameManager : MonoBehaviour
             Instance = this;
         }
 
+        Instance.scoreText = FindObjectOfType<Text>();
+
         DontDestroyOnLoad(Instance);
     }
 

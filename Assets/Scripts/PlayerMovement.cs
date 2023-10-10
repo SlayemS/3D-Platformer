@@ -5,6 +5,8 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
     public float moveSpeed;
+    private float walkSpeed = 6;
+    private float runSpeed = 10;
     // public Rigidbody rb;
     public float jumpForce;
     public CharacterController controller;
@@ -23,6 +25,15 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        
+        if (Input.GetButton("Fire3")) 
+        {
+            moveSpeed = runSpeed;
+        }
+        else {
+            moveSpeed = walkSpeed;
+        }
+        
         float yStore = moveDirection.y;
         moveDirection = (transform.forward * Input.GetAxis("Vertical")) + (transform.right * Input.GetAxis("Horizontal"));
         moveDirection = moveDirection.normalized * moveSpeed;

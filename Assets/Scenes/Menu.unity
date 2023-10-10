@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.40356746, g: 0.42446697, b: 0.42642173, a: 1}
+  m_IndirectSpecularColor: {r: 0.4514197, g: 0.5006143, b: 0.57071596, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -204,7 +204,7 @@ GameObject:
   - component: {fileID: 181660195}
   m_Layer: 5
   m_Name: Text (Legacy)
-  m_TagString: Untagged
+  m_TagString: Score
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -359,13 +359,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 467275433}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.08758861, y: 0.25113362, z: 0.22234468, w: 0.9379888}
+  m_LocalRotation: {x: 0.03634457, y: 0.46319222, z: -0.44517145, w: 0.7654766}
   m_LocalPosition: {x: 0, y: 3, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: -183.017, y: -149.284, z: 207.5}
+  m_LocalEulerAnglesHint: {x: -207.907, y: -130.019, z: 132.851}
 --- !u!1 &903183341
 GameObject:
   m_ObjectHideFlags: 0
