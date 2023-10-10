@@ -43,6 +43,9 @@ public class PlayerMovement : MonoBehaviour
             moveDirection.y = 0f;
             if (Input.GetButtonDown("Jump")) {
                 moveDirection.y = jumpForce;
+                // if (Input.GetButtonDown("Jump") && Instance.powerUp == true) {
+                //     moveDirection.y = jumpForce;
+                // }
             }
         }
 
