@@ -37,6 +37,7 @@ public class GameManager : MonoBehaviour
     public void LevelComplete()
     {
         totalScore = currentScore;
+        scoreText.text = "Score: " + totalScore;
     }
 
     public void ResetLevelScore()
