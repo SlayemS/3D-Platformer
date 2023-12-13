@@ -1,6 +1,6 @@
 # 3D-Platformer
 
-It is a platformer where you need to grab pickups to add to your score.
+It is a Unity platformer where you need to grab pickups to add to your score.
 You can double jump provided you have the power up and when you hit red obstacles you die.
 
 Requirements:
